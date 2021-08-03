@@ -27,8 +27,6 @@
 
 ![Form Page](images/FormPage.png)
 
-![SignUp Form](images/SignUpForm.png)
-
 ![Contact Form](images/ContactForm.png)
 
 ![Configuring](images/Configurating.png)
