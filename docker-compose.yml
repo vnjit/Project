@@ -10,3 +10,35 @@ services:
     container_name: "Flask_App_22"
     ports:
       - "5001:5001"
+  app3:
+    build: ./flask-wtforms-tutorial/flask_wtforms_tutorial
+    container_name: "Flask_App_33"
+    ports:
+      - "5002:5002"
+  app4:
+    build: appIV
+    container_name: "Flask_App_44"
+    ports:
+      - "5003:5003"
+  app5:
+    build: ./appV
+    container_name: "Flask_App_55"
+    ports:
+      - "5004:5004"
+  app6:
+    build: ./appVI
+    container_name: "Flask_App_66"
+    ports:
+      - "5005:5005"
+  app9:
+    build: ./flask-sqlalchemy-tutorial/flask_sqlalchemy_tutorial
+    container_name: "Flask_App_99"
+    ports:
+      - "5008:5008"
+  final:
+    build: ./appx/app
+    container_name: "Flask_App_Project"
+    depends_on:
+      - db
+    ports:
+      - "5006:5006"
